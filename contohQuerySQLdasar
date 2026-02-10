@@ -1,0 +1,11 @@
+CREATE TABLE Absensi (
+  ID_Siswa INT PRIMARY KEY,
+  Nama VARCHAR(50),
+  Kelas VARCHAR(10),
+  Status_Hadir VARCHAR(10)
+);
+
+INSERT INTO Absensi VALUES (1, 'Andi', 'X IPA 1', 'Hadir');
+SELECT * FROM Absensi WHERE Status_Hadir='Hadir';
+UPDATE Absensi SET Status_Hadir='Tidak Hadir' WHERE ID_Siswa=1;
+DELETE FROM Absensi WHERE ID_Siswa=1;
